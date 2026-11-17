@@ -1,0 +1,587 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFlow By Faizul Islam Rifat</title>
+  <link rel="icon" href="../icons/icon32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- ================= HEADER ================= -->
+    <header class="hero">
+      <div class="hero-row">
+        <div class="avatar-wrap">
+          <img class="avatar" src="../assets/avatar.png" alt="Faizul Islam Rifat" />
+          <span class="avatar-online-dot"></span>
+        </div>
+        <div class="hero-text">
+          <div class="hero-grid">
+            <div class="hero-grid-title">
+              <h1>Auto<span>Flow</span></h1>
+            </div>
+            <div class="hero-grid-sep">
+              <span class="hero-sep">•</span>
+            </div>
+            <div class="hero-grid-actions">
+              <div class="hero-socials">
+                <a class="hero-icon fb" href="https://www.facebook.com/faizulislamrifatkhan" target="_blank" rel="noopener noreferrer" title="Facebook Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a class="hero-icon yt" href="https://www.youtube.com/@faizulislamrifatt" target="_blank" rel="noopener noreferrer" title="YouTube Channel">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                    <polygon fill="#FFFFFF" points="9.545,15.568 15.818,12 9.545,8.432"/>
+                  </svg>
+                </a>
+                <a class="hero-icon wa" href="https://whatsapp.com/channel/0029VbE9x452phHPoJopqq0x" target="_blank" rel="noopener noreferrer" title="WhatsApp Channel">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                    <path fill="#FFFFFF" d="M17.52 14.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.25-.59-.5-.51-.67-.52h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.07 2.92 1.22 3.12c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+                  </svg>
+                </a>
+                <a class="hero-icon tg" href="https://t.me/faizulislamrifatt" target="_blank" rel="noopener noreferrer" title="Telegram Channel">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#24A1DE" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                    <path fill="#FFFFFF" d="M16.64 8.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-grid-sub-left">
+              <span>By Faizul Islam Rifat</span>
+            </div>
+            <div class="hero-grid-sep">
+              <span class="hero-sep">•</span>
+            </div>
+            <div class="hero-grid-sub-right">
+              <span>Batch Studio for Google Flow</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ================= PAGE STATUS ================= -->
+    <div id="pageStatus" class="page-status off">
+      <div class="status-ping-wrap">
+        <span class="dot"></span>
+      </div>
+      <span id="pageStatusText">Checking Google Flow tab...</span>
+      <button id="openFlowBtn" class="btn tiny ghost hidden">⚡ Open Google Flow</button>
+    </div>
+
+    <!-- ================= TABS ================= -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="control">
+        <svg class="tab-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.5 2.54l2.25 1.5c.78-1.21 1.25-2.64 1.25-4.04 0-4.97-4.03-9-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-4.97.95-9 5.03-9 9.95 0 5.52 4.48 10 10 10 2.51 0 4.8-.93 6.55-2.46l-2.05-1.37c-1.28.84-2.83 1.33-4.5 1.33zm1-9V6l5 5-5 5v-4H8v-2h5z"/></svg>
+        <span>Control</span>
+      </button>
+      <button class="tab" data-tab="settings">
+        <svg class="tab-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54A.484.484 0 0 0 13.9 2h-3.8c-.24 0-.45.17-.49.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.73 8.47a.5.5 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.8c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+        <span>Settings</span>
+      </button>
+      <button class="tab" data-tab="logs">
+        <svg class="tab-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        <span>Logs</span>
+        <span id="logBadge" class="badge hidden">0</span>
+      </button>
+    </nav>
+
+    <!-- ================= CONTROL ================= -->
+    <section id="tab-control" class="tab-panel active">
+      <div class="card">
+        <div class="card-title">Generation Mode</div>
+        <div class="modes" id="modes">
+          <button class="chip" data-mode="textToVideo"><b>Text</b> to Video</button>
+          <button class="chip" data-mode="imageToVideo"><b>Frame</b> to Video</button>
+          <button class="chip" data-mode="componentsToVideo"><b>Ingredients</b> to Video</button>
+          <button class="chip" data-mode="textToImage"><b>Text</b> to Image</button>
+          <button class="chip" data-mode="imageToImage"><b>Image</b> to Image</button>
+          <button class="chip" data-mode="agentAutomation"><b>Agent</b> Automation</button>
+        </div>
+        <p class="hint" id="modeHint"></p>
+        <div id="agentTypeRow" class="seg hidden">
+          <button class="seg-btn" data-agent="agentAutomationToImage">Create images</button>
+          <button class="seg-btn" data-agent="agentAutomationToVideo">Create videos</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Model &amp; Format Parameters</div>
+        <div class="grid2">
+          <label class="field"><span>Aspect ratio</span>
+            <select id="q_aspectRatio" data-setting="aspectRatio">
+              <option value="16:9">16:9 YouTube Landscape</option>
+              <option value="9:16">9:16 Shorts / TikTok</option>
+              <option value="square">1:1 Square</option>
+              <option value="portrait">4:5 Portrait</option>
+              <option value="landscape">21:9 Ultra-Wide</option>
+            </select>
+          </label>
+          <label class="field"><span>Outputs per prompt</span>
+            <select id="q_outputCount" data-setting="outputCount">
+              <option value="1">1 Output</option><option value="2">2 Outputs</option><option value="3">3 Outputs</option><option value="4">4 Outputs</option>
+            </select>
+          </label>
+          <label class="field video-only"><span>Video model</span>
+            <select id="q_model" data-setting="model">
+              <option value="Veo 3.1 - Lite">Veo 3.1 - Lite</option>
+              <option value="Veo 3.1 - Fast">Veo 3.1 - Fast</option>
+              <option value="Veo 3.1 - Quality">Veo 3.1 - Quality</option>
+              <option value="Omni 1.1 Flash">Omni 1.1 Flash (Omni Flash)</option>
+            </select>
+          </label>
+          <label class="field image-only"><span>Image model</span>
+            <select id="q_imageModel" data-setting="imageModel">
+              <option value="Nano Banana Pro">Nano Banana Pro</option>
+              <option value="Nano Banana 2.1">Nano Banana 2.1</option>
+              <option value="Nano Banana 2.1 Light">Nano Banana 2.1 Light</option>
+            </select>
+          </label>
+          <label class="field video-only"><span>Duration / chain</span>
+            <select id="q_defaultVideoOption" data-setting="defaultVideoOption">
+              <option value="4s">4s Standard</option><option value="6s">6s Standard</option><option value="8s">8s Standard</option><option value="10s">10s Standard</option>
+              <option value="4s-concat">4s + extend chain</option><option value="6s-concat">6s + extend chain</option>
+              <option value="8s-concat">8s + extend chain</option><option value="10s-concat">10s + extend chain</option>
+            </select>
+          </label>
+          <label class="field image-only"><span>Image option</span>
+            <select id="q_defaultImageOption" data-setting="defaultImageOption">
+              <option value="new-image">New image each prompt</option>
+              <option value="new-image-concat">Chain: edit previous image</option>
+            </select>
+          </label>
+        </div>
+        <p class="hint" id="chainHint">Extend chain: each next prompt starts from the last frame / image of the previous one (runs sequentially).</p>
+      </div>
+
+      <!-- images -->
+      <div class="card" id="imagesCard">
+        <div class="card-title">Images <span class="muted" id="imgCount"></span></div>
+        <label class="drop" id="dropZone">
+          <input type="file" id="imageInput" multiple accept="image/*" />
+          <span>Click or drop images here</span>
+          <small id="dropHint">Name files like the word in your prompt (e.g. <i>lion.png</i>) to auto-pick them.</small>
+        </label>
+        <div class="thumbs" id="thumbs"></div>
+        <div class="grid2">
+          <label class="field"><span>Max images per prompt</span>
+            <select id="maxImagesPerPrompt"></select>
+          </label>
+          <div class="field toggle-field">
+            <span>Auto pick by name</span>
+            <label class="switch"><input type="checkbox" id="autoAddCharacterImages" data-setting="autoAddCharacterImages" /><i></i></label>
+          </div>
+        </div>
+        <button class="btn tiny ghost" id="clearImagesBtn" style="margin-top:7px;">Remove all images</button>
+      </div>
+
+      <!-- voice -->
+      <div class="card" id="voiceCard">
+        <div class="card-title">Voice &amp; Narration</div>
+        <div class="grid2">
+          <div class="field toggle-field">
+            <span>Auto voice by name</span>
+            <label class="switch"><input type="checkbox" id="autoAddVoiceBySpeaker" data-setting="autoAddVoiceBySpeaker" /><i></i></label>
+          </div>
+          <label class="field"><span>Default voice</span>
+            <select id="defaultSpeaker" data-setting="defaultSpeaker"></select>
+          </label>
+        </div>
+        <div class="row-gap" style="align-items:center;">
+          <button class="btn tiny ghost" id="scanVoicesBtn">🔄 Sync voices</button>
+          <button class="btn tiny primary" id="previewVoiceBtn" style="white-space:nowrap;">&#9654;&#65039; Listen Voice</button>
+          <span class="muted small" id="voiceCount"></span>
+        </div>
+        <p class="hint">Voice is picked after the @character, so Character + Voice pair together. "Sync" reads Flow's own voice library.</p>
+      </div>
+
+      <!-- characters -->
+      <div class="card" id="charCard">
+        <div class="card-title">Character Consistency</div>
+        <div class="grid2">
+          <div class="field toggle-field">
+            <span>Auto @character by name</span>
+            <label class="switch"><input type="checkbox" id="enableCharacterControl" data-setting="enableCharacterControl" /><i></i></label>
+          </div>
+          <button class="btn tiny ghost" id="scanCharsBtn">&#128260; Scan characters from Flow</button>
+        </div>
+        <div class="char-list" id="charList"><span class="muted small">No characters scanned yet.</span></div>
+      </div>
+
+      <!-- prompts -->
+      <div class="card">
+        <div class="card-title">
+          <span>Batch Prompts</span> <span class="muted" id="promptCount">0</span>
+          <button class="btn tiny ghost" id="magicEnhanceBtn" style="margin-left:auto; border-color:rgba(234,179,8,0.45); color:#facc15;" title="1-Click Hollywood Cinematic Prompt Polish">&#10024; Enhance</button>
+          <button class="btn tiny ghost" id="openLibraryBtn" style="border-color:rgba(168,85,247,0.45); color:#c084fc;">&#128218; Library</button>
+          <button class="btn tiny ghost" id="openAiDrawerBtn" style="border-color:rgba(56,189,248,0.45); color:#38bdf8;">&#10024; AI Scene</button>
+        </div>
+
+        <!-- Presets bar -->
+        <div class="presets-bar" id="presetsBar">
+          <span class="preset-label">&#9889; Presets:</span>
+          <button class="preset-pill" data-preset="cinematic">&#127916; 4K Cinematic</button>
+          <button class="preset-pill" data-preset="cyberpunk">&#127749; Cyberpunk Neon</button>
+          <button class="preset-pill" data-preset="drone">&#128760; Drone Aerial</button>
+          <button class="preset-pill" data-preset="anime">&#127912; Studio Anime</button>
+          <button class="preset-pill" data-preset="macro">&#128269; Macro Studio</button>
+          <button class="preset-pill" data-preset="action">&#9889; Action Slow-mo</button>
+          <button class="preset-pill" data-preset="fantasy">&#128009; Epic Fantasy</button>
+          <button class="preset-pill" data-preset="scifi">&#128640; Deep Space</button>
+        </div>
+
+        <!-- AI Drawer -->
+        <div id="aiPromptDrawer" class="ai-drawer hidden">
+          <div class="card-title" style="color:#38bdf8;">&#10024; AI Story &amp; Scene Generator</div>
+          <p class="hint" style="margin-top:0;">Enter an idea, topic, or story to auto-generate multiple timed scenes ready for video chaining.</p>
+          <input type="text" id="aiStoryIdea" placeholder="e.g. Cyberpunk detective racing a hovercar in neon rain" style="margin-bottom:8px;" />
+          <div class="row-between" style="margin-bottom:8px;">
+            <div class="range">
+              <span>AI Engine:</span>
+              <select id="aiDrawerProvider" style="width:135px; padding:3px 6px; height:28px;">
+                <option value="groq" selected>&#9889; Groq (Llama 3)</option>
+                <option value="openai">&#129302; OpenAI (GPT-4o)</option>
+                <option value="gemini">&#10024; Google Gemini</option>
+                <option value="builtin">&#127916; Built-in Offline</option>
+              </select>
+            </div>
+            <div class="range">
+              <span>Scenes:</span>
+              <select id="aiSceneCount" style="width:75px; padding:3px 6px; height:28px;">
+                <option value="3">3 Scenes</option>
+                <option value="5" selected>5 Scenes</option>
+                <option value="8">8 Scenes</option>
+                <option value="10">10 Scenes</option>
+              </select>
+            </div>
+          </div>
+          <div class="row-between" style="margin-top:0;">
+            <span class="muted small">Outputs 4-sec timed #0:00 scenes</span>
+            <div class="row-gap" style="margin:0;">
+              <button class="btn tiny primary" id="generateAiPromptsBtn">Generate Scenes</button>
+              <button class="btn tiny ghost" id="closeAiDrawerBtn">Close</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Library Drawer -->
+        <div id="promptLibraryDrawer" class="ai-drawer hidden" style="border-color:rgba(139,92,246,0.45); background:linear-gradient(180deg, rgba(20, 16, 48, 0.96), rgba(10, 8, 28, 0.96));">
+          <div class="row-between" style="margin-top:0; margin-bottom:8px;">
+            <div class="card-title" style="color:#a78bfa; margin:0;">&#128218; Prompt Templates &amp; History</div>
+            <button class="btn tiny ghost" id="closeLibraryDrawerBtn">Close</button>
+          </div>
+          <div class="library-tabs">
+            <button class="lib-tab active" data-libtab="templates">&#11088; Saved Templates</button>
+            <button class="lib-tab" data-libtab="history">&#128344; Recent History</button>
+          </div>
+          <div id="libTabTemplates" class="lib-panel active">
+            <div class="row-gap" style="margin-bottom:8px;">
+              <input type="text" id="newTemplateTitle" placeholder="Template title (optional)..." style="height:28px; font-size:11px;" />
+              <button class="btn tiny primary" id="saveCurrentAsTemplateBtn" style="white-space:nowrap;">&#128190; Save Current</button>
+            </div>
+            <div id="templatesList" class="lib-list"></div>
+          </div>
+          <div id="libTabHistory" class="lib-panel hidden">
+            <div class="row-between small" style="margin-bottom:6px;">
+              <span class="muted">Last executed prompt batches:</span>
+              <button class="btn tiny ghost" id="clearHistoryBtn" style="padding:2px 6px; font-size:10px;">Clear</button>
+            </div>
+            <div id="historyList" class="lib-list"></div>
+          </div>
+        </div>
+
+        <textarea id="prompts" rows="5" placeholder="Prompt 1...&#10;&#10;Prompt 2...&#10;&#10;(Leave one empty line between prompts. Start a prompt with #name to name the file.)"></textarea>
+        <div class="row-between">
+          <div class="row-gap" style="margin:0;">
+            <label class="file-btn">&#128196; .txt<input type="file" id="txtInput" accept=".txt,text/plain" /></label>
+            <label class="file-btn" style="color:#34d399; border-color:rgba(52,211,153,0.35);">&#128202; CSV / Sheets<input type="file" id="csvInput" accept=".csv,text/csv,text/plain,.tsv" /></label>
+          </div>
+          <div class="range">
+            <span>Run</span>
+            <input type="number" id="rangeFrom" min="1" value="1" />
+            <span>to</span>
+            <input type="number" id="rangeTo" min="1" value="1" />
+          </div>
+        </div>
+        <div class="prompt-list" id="promptList"></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="startBtn">
+          <span class="btn-shine"></span>
+          <svg viewBox="0 0 24 24" class="btn-icon"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+          <span>Start AutoFlow</span>
+        </button>
+        <button class="btn danger hidden" id="stopBtn">
+          <svg viewBox="0 0 24 24" class="btn-icon"><path fill="currentColor" d="M6 6h12v12H6z"/></svg>
+          <span>Stop Batch</span>
+        </button>
+        <button class="btn ghost" id="clearBtn">
+          <svg viewBox="0 0 24 24" class="btn-icon"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <span>Clear</span>
+        </button>
+      </div>
+      <div class="shortcuts-bar">
+        <span><kbd>Ctrl</kbd>+<kbd>Enter</kbd> Start</span>
+        <span>•</span>
+        <span><kbd>Esc</kbd> Stop / Close</span>
+        <span>•</span>
+        <span><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd> AI Scene</span>
+        <span>•</span>
+        <span><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> Library</span>
+      </div>
+      <div class="card progress-card" id="progressCard">
+        <div class="card-title">
+          <span>&#9889; Live Queue &amp; Progress</span>
+          <span class="live-pulse"></span>
+        </div>
+        <div id="queueEmpty" class="muted small" style="padding:6px 0;">Queue is currently idle. Add prompts above and start automation!</div>
+        <div id="queueBox" class="hidden">
+          <div class="row-between small"><span id="queueStatus">-</span><span id="queueCount">0/0</span></div>
+          <div class="bar"><i id="queueBar"></i></div>
+          <div class="row-between small"><span id="currentLine" class="muted">-</span><span id="currentPct" class="pct-glow"></span></div>
+          <div class="row-between small" style="margin-top:5px; padding-top:4px; border-top:1px dashed rgba(255,255,255,0.08);">
+            <span id="queueTimeElapsed" class="muted" style="font-size:11px;">&#9201; Elapsed: 00:00</span>
+            <span id="queueEta" style="color:#38bdf8; font-weight:600; font-size:11px;">&#9203; ETA: Calculating...</span>
+          </div>
+        </div>
+
+        <!-- Batch Analytics Summary -->
+        <div id="batchAnalyticsCard" class="hidden" style="margin-top:10px; padding:10px; border-radius:8px; background:rgba(30,41,59,0.7); border:1px solid rgba(56,189,248,0.25);">
+          <div class="row-between" style="margin:0 0 6px 0;">
+            <span style="font-weight:700; color:#38bdf8; font-size:11px;">&#128202; Batch Analytics Summary</span>
+            <button class="btn tiny ghost" id="closeAnalyticsBtn" style="padding:1px 5px; font-size:10px;">&times;</button>
+          </div>
+          <div class="grid2" style="font-size:11px; gap:4px 8px;">
+            <div><span class="muted">Total Prompts:</span> <b id="statTotal">0</b></div>
+            <div><span class="muted">Successful:</span> <b id="statSuccess" style="color:#34d399;">0</b></div>
+            <div><span class="muted">Time Elapsed:</span> <b id="statDuration">0s</b></div>
+            <div><span class="muted">Avg Speed:</span> <b id="statAvg">0s/item</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SETTINGS ================= -->
+    <section id="tab-settings" class="tab-panel">
+      <div class="card">
+        <div class="card-title">⚡ Speed &amp; Concurrency</div>
+        <div class="grid2">
+          <label class="field"><span>Prompts at the same time</span>
+            <select data-setting="concurrentPrompts"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+          <label class="field"><span>Agent outputs per prompt</span>
+            <select data-setting="agentOutputCount"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </label>
+          <label class="field"><span>Delay min (sec)</span><input type="number" min="0" max="600" data-setting="promptDelaySecondsMin" /></label>
+          <label class="field"><span>Delay max (sec)</span><input type="number" min="0" max="600" data-setting="promptDelaySecondsMax" /></label>
+          <label class="field"><span>Max retries</span><input type="number" min="0" max="20" data-setting="maxRetries" /></label>
+          <div class="field toggle-field"><span>Zoom out Flow while running</span>
+            <label class="switch"><input type="checkbox" data-setting="zoomOutWhileRunning" /><i></i></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📥 Auto-Download &amp; Organization</div>
+        <div class="grid2">
+          <label class="field"><span>Video quality</span>
+            <select data-setting="autoDownloadVideoQuality">
+              <option value="no-download">No download</option><option value="720">720p (fast)</option><option value="1080">1080p (upscale)</option><option value="4k">4K (upscale)</option>
+            </select>
+          </label>
+          <label class="field"><span>Image quality</span>
+            <select data-setting="autoDownloadImageQuality">
+              <option value="no-download">No download</option><option value="1k">1K (fast)</option><option value="2k">2K (upscale)</option><option value="4k">4K (upscale)</option>
+            </select>
+          </label>
+          <label class="field"><span>Save to folder</span><input type="text" placeholder="e.g. faizul-flow" data-setting="folderName" /></label>
+          <div class="field toggle-field"><span>Auto rename files</span>
+            <label class="switch"><input type="checkbox" data-setting="autoChangeFileName" /><i></i></label>
+          </div>
+          <label class="field span2"><span>File naming</span>
+            <select data-setting="fileNamingSystem">
+              <option value="prompt_tag">Prompt Tag + time code (0-00.png, 0-04.mp4 from #tag)</option>
+              <option value="simple">Simple (1 image.png, 1 video.mp4, ...)</option>
+            </select>
+          </label>
+        </div>
+        <div style="background: rgba(0, 210, 255, 0.08); border: 1px solid rgba(0, 210, 255, 0.28); border-radius: 9px; padding: 10px; margin-top: 10px;">
+          <div style="font-weight: 700; color: #38bdf8; font-size: 11.5px; margin-bottom: 4px;">⚡ অটো-ডাউনলোড পারমিশন ঠিক করার নিয়ম:</div>
+          <p class="hint" style="margin: 0 0 8px; color: #cbd5e1; font-size: 11px; line-height: 1.4;">
+            ক্রোম ব্রাউজার যাতে ছবি/ভিডিও সেভ করার সময় বারবার সেভ ডায়ালগ না দেখায়, সেজন্য ক্রোমের <b>"Ask where to save each file before downloading"</b> অপশনটি <b>OFF</b> রাখুন।
+          </p>
+          <button class="btn tiny primary" id="openDlSettings" style="width: 100%;">⚙️ Open Chrome Download Settings</button>
+        </div>
+      </div>
+
+      <!-- Notifications & Telegram -->
+      <div class="card">
+        <div class="card-title">🔔 Instant Notifications &amp; Alerts</div>
+        <div class="grid2">
+          <div class="field toggle-field">
+            <span>Desktop notification</span>
+            <label class="switch"><input type="checkbox" data-setting="enableDesktopNotification" /><i></i></label>
+          </div>
+          <div class="field toggle-field">
+            <span>Audio chime on complete</span>
+            <label class="switch"><input type="checkbox" data-setting="enableAudioAlert" /><i></i></label>
+          </div>
+          <div class="field toggle-field span2">
+            <span>Send Telegram alert</span>
+            <label class="switch"><input type="checkbox" data-setting="enableTelegram" id="enableTelegramToggle" /><i></i></label>
+          </div>
+        </div>
+        
+        <div id="telegramSettingsBox" class="sub-box">
+          <label class="field"><span>Telegram Bot Token</span>
+            <input type="text" placeholder="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11" data-setting="telegramBotToken" />
+          </label>
+          <label class="field" style="margin-top:6px;"><span>Telegram Chat ID</span>
+            <input type="text" placeholder="e.g. 987654321 or @yourchannel" data-setting="telegramChatId" />
+          </label>
+          <div class="row-gap" style="align-items:center;">
+            <button class="btn tiny ghost" id="testTelegramBtn">&#128227; Test Telegram Alert</button>
+            <span class="muted small" id="telegramTestStatus"></span>
+          </div>
+          <p class="hint">Create a free bot on Telegram via @BotFather to receive completion alerts directly to your phone.</p>
+        </div>
+
+        <div class="field toggle-field span2" style="margin-top:8px;">
+          <span>Send Discord Webhook alert</span>
+          <label class="switch"><input type="checkbox" data-setting="enableDiscord" id="enableDiscordToggle" /><i></i></label>
+        </div>
+        
+        <div id="discordSettingsBox" class="sub-box hidden">
+          <label class="field"><span>Discord Webhook URL</span>
+            <input type="password" placeholder="https://discord.com/api/webhooks/..." data-setting="discordWebhookUrl" />
+          </label>
+          <div class="row-gap" style="align-items:center; margin-top:6px;">
+            <button class="btn tiny ghost" id="testDiscordBtn">&#127918; Test Discord Alert</button>
+            <span class="muted small" id="discordTestStatus"></span>
+          </div>
+          <p class="hint">Paste your Discord channel webhook to receive real-time rich embeds with completion stats and folder names.</p>
+        </div>
+      </div>
+
+      <!-- AI Auto-Healer & Smart Resilience -->
+      <div class="card">
+        <div class="card-title">&#128737;&#65039; AI Auto-Healer &amp; Smart Error Recovery</div>
+        <div class="grid2">
+          <div class="field toggle-field span2">
+            <span>AI Auto-Healer (Sanitize &amp; auto-retry on safety/policy error)</span>
+            <label class="switch"><input type="checkbox" data-setting="autoHealRetry" /><i></i></label>
+          </div>
+          <label class="field"><span>Max Retries per Prompt</span>
+            <select data-setting="maxRetries">
+              <option value="1">1 Retry</option>
+              <option value="2" selected>2 Retries</option>
+              <option value="3">3 Retries</option>
+            </select>
+          </label>
+          <label class="field"><span>Retry Delay (Seconds)</span>
+            <input type="number" min="5" max="60" value="15" data-setting="retryDelaySeconds" />
+          </label>
+        </div>
+        <p class="hint">&#128161; When enabled, if Google Flow flags a prompt with policy warnings or generation errors, AutoFlow automatically rewrites the prompt to pass safety filters and retries without stopping your overnight queue.</p>
+      </div>
+
+      <!-- AI Prompt Studio Settings -->
+      <div class="card">
+        <div class="card-title">&#129302; AI Scene Studio &amp; Multi-Provider API</div>
+        <div class="grid2">
+          <label class="field span2"><span>Default AI Provider</span>
+            <select id="settingAiProvider" data-setting="aiProvider">
+              <option value="groq" selected>&#9889; Groq (Llama 3.3 70B - Free &amp; Ultra-Fast Worldwide)</option>
+              <option value="openai">&#129302; OpenAI (ChatGPT / GPT-4o-mini)</option>
+              <option value="gemini">&#10024; Google Gemini API (gemini-2.0-flash)</option>
+              <option value="builtin">&#127916; Built-in Cinematic Sequencer (Offline)</option>
+            </select>
+          </label>
+          <label class="field span2"><span>Groq API Key (Recommended - Free at console.groq.com)</span>
+            <input type="password" placeholder="gsk_... (No VPN needed, zero location error)" data-setting="groqApiKey" />
+          </label>
+          <label class="field"><span>OpenAI API Key (Optional)</span>
+            <input type="password" placeholder="sk-proj-..." data-setting="openaiApiKey" />
+          </label>
+          <label class="field"><span>Google Gemini API Key (Optional)</span>
+            <input type="password" placeholder="AIzaSy..." data-setting="geminiApiKey" />
+          </label>
+        </div>
+        <p class="hint">&#9889; <b>Groq</b> is 100% free, fastest in the world, and works from Bangladesh without any VPN or location restrictions.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">&#9881;&#65039; Advanced: Custom Selectors</div>
+        <p class="hint">Only needed if Google updates the Flow UI layout. Paste JSON like {"submitButton": "..."} to override.</p>
+        <textarea id="customSelectors" rows="3" placeholder='{ }'></textarea>
+        <div class="row-gap">
+          <button class="btn tiny ghost" id="saveSelectors">Save selectors</button>
+          <button class="btn tiny ghost" id="resetSelectors">Clear</button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn ghost" id="resetSettings">Reset all settings</button>
+      </div>
+      <p class="hint center" id="savedNote">Settings save automatically.</p>
+    </section>
+
+    <!-- ================= LOGS ================= -->
+    <section id="tab-logs" class="tab-panel">
+      <div class="row-gap">
+        <button class="btn tiny ghost" id="copyLogs">📋 Copy logs</button>
+        <button class="btn tiny ghost" id="clearLogs">🗑️ Clear</button>
+      </div>
+      <div class="logs" id="logs"></div>
+    </section>
+
+    <!-- ================= MASTERPIECE FOOTER ================= -->
+    <footer class="foot">
+      <div class="foot-capsule">
+        <a href="https://www.facebook.com/faizulislamrifatkhan" target="_blank" rel="noopener noreferrer" class="foot-author" title="Faizul Islam Rifat on Facebook">
+          <div class="mini-avatar-wrap">
+            <img src="../assets/avatar.png" alt="Faizul Islam Rifat" class="mini-avatar" />
+            <span class="creator-badge-dot"></span>
+          </div>
+          <span class="author-name">Faizul Islam Rifat</span>
+          <span class="creator-check" title="Verified Creator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </span>
+        </a>
+        <span class="foot-sep">•</span>
+        <div class="foot-socials">
+          <a class="foot-icon yt" href="https://www.youtube.com/@faizulislamrifatt" target="_blank" rel="noopener noreferrer" title="YouTube Channel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+              <polygon fill="#FFFFFF" points="9.545,15.568 15.818,12 9.545,8.432"/>
+            </svg>
+          </a>
+          <a class="foot-icon wa" href="https://whatsapp.com/channel/0029VbE9x452phHPoJopqq0x" target="_blank" rel="noopener noreferrer" title="WhatsApp Channel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+              <path fill="#FFFFFF" d="M17.52 14.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.25-.59-.5-.51-.67-.52h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.07 2.92 1.22 3.12c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+            </svg>
+          </a>
+          <a class="foot-icon tg" href="https://t.me/faizulislamrifatt" target="_blank" rel="noopener noreferrer" title="Telegram Channel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path fill="#24A1DE" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path fill="#FFFFFF" d="M16.64 8.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>
