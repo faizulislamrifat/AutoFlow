@@ -29,7 +29,7 @@
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/faizulislamrifat/AutoFlow.git
    ```
 2. Open Google Chrome and navigate to:
    ```text
